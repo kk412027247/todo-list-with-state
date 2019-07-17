@@ -1,0 +1,28 @@
+.todo-list {
+    margin: 100px 0 100px 100px;
+}
+
+.todo-list .todo-list-input{
+    width: 500px;
+    height: 60px;
+    border:1px solid #3f618b;
+    font-size:30px;
+    margin-bottom: 20px;
+}
+
+.todo-list .button{
+    display: block;
+    height: 50px;
+    width: 100px;
+    font-size:20px;
+    margin-bottom: 50px;
+}
+
+.todo-list .button-group{
+    margin-bottom: 30px;
+}
+
+.todo-list .button-group button{
+    height: 30px;
+    width: 70px;
+}

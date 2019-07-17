@@ -1,0 +1,29 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 700px;
+}
+
+
+
+.todo-item p {
+    font-size: 30px;
+    width: 400px;
+    margin: 0 20px;
+}
+
+.todo-item .finish{
+    text-decoration:line-through
+}
+
+
+ .todo-item span {
+     font-size: 30px;
+     color: darkred;
+ }
+
+.todo-item span:hover {
+    cursor: pointer;
+}
+
