@@ -11,10 +11,15 @@ export default class TodoList extends React.Component {
     list: [{id: 0, content: 'hehe', finish: true}],
     value: '',
     status:'all',
+    query:'',
   };
 
   handleInput = (event) => {
     this.setState({value: event.target.value})
+  };
+
+  handleQuery = (event) => {
+    this.setState({query: event.target.value})
   };
 
   handleAdd = () => {
@@ -48,7 +53,7 @@ export default class TodoList extends React.Component {
   };
 
   render() {
-    const {value, list, status} = this.state;
+    const {value, list, status, query} = this.state;
     return (
       <div className={'todo-list'}>
         <input
@@ -63,6 +68,15 @@ export default class TodoList extends React.Component {
         >
           新增
         </button>
+
+        <input
+          type="text"
+          className={'todo-list-input'}
+          onChange={this.handleQuery}
+          value={query}
+          placeholder={'输入过滤字段'}
+        />
+
         <div className={'button-group'}>
           <button onClick={this.handleStatus.bind(null, 'all')}>全部</button>
           <button onClick={this.handleStatus.bind(null,'finished')}>已完成</button>
@@ -77,7 +91,9 @@ export default class TodoList extends React.Component {
             }else{
               return !item.finish
             }
-          }).map(item =>
+          }).filter(
+            item=> new RegExp(query).test(item.content)
+          ).map(item =>
             <TodoItem
               item={item}
               key={item.id}
