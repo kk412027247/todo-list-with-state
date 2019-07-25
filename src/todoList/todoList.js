@@ -92,7 +92,10 @@ export default class TodoList extends React.Component {
               return !item.finish
             }
           }).filter(
-            item => new RegExp(query.replace(/\\/g, '\\\\')).test(item.content)
+            item => new RegExp(query.replace(/\\/g, '\\\\')
+              .replace(/\?/g, '\\?')
+              .replace(/\*/g, '\\*')
+            ).test(item.content)
           ).map(item =>
             <TodoItem
               item={item}
