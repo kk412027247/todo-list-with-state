@@ -8,10 +8,10 @@ let i = 0;
 export default class TodoList extends React.Component {
 
   state = {
-    list: [{id: 0, content: 'hehe', finish: true}],
+    list: [{id: 0, content: '\\hehe', finish: true}],
     value: '',
-    status:'all',
-    query:'',
+    status: 'all',
+    query: '',
   };
 
   handleInput = (event) => {
@@ -79,20 +79,20 @@ export default class TodoList extends React.Component {
 
         <div className={'button-group'}>
           <button onClick={this.handleStatus.bind(null, 'all')}>全部</button>
-          <button onClick={this.handleStatus.bind(null,'finished')}>已完成</button>
-          <button onClick={this.handleStatus.bind(null,'unfinishde')}>未完成</button>
+          <button onClick={this.handleStatus.bind(null, 'finished')}>已完成</button>
+          <button onClick={this.handleStatus.bind(null, 'unfinishde')}>未完成</button>
         </div>
         {
-          list.filter(item=>{
-            if(status === 'all'){
+          list.filter(item => {
+            if (status === 'all') {
               return true
-            }else if (status === 'finished') {
+            } else if (status === 'finished') {
               return item.finish
-            }else{
+            } else {
               return !item.finish
             }
           }).filter(
-            item=> new RegExp(query).test(item.content)
+            item => new RegExp(query.replace(/\\/g, '\\\\')).test(item.content)
           ).map(item =>
             <TodoItem
               item={item}
