@@ -99,6 +99,8 @@ export default class TodoList extends React.Component {
               .replace(/\$/g,'\\$')
               .replace(/\[/g,'\\[')
               .replace(/\^/g,'\\^')
+              .replace(/\(/g,'\\(')
+              .replace(/\|/g,'\\|')
             ).test(item.content)
           ).map(item =>
             <TodoItem
