@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/todoList/todoList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+            <state relative-caret-position="684">
+              <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -148,7 +148,7 @@
       <workItem from="1563345409627" duration="10163000" />
       <workItem from="1563355669729" duration="664000" />
       <workItem from="1563519130517" duration="257000" />
-      <workItem from="1564054869670" duration="1154000" />
+      <workItem from="1564054869670" duration="1473000" />
     </task>
     <task id="LOCAL-00001" summary="fix bug search \">
       <created>1564055366482</created>
@@ -157,11 +157,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564055366482</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix bug, search \ ? *">
+      <created>1564056092951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564056092951</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix bug, search \ ? * .">
+      <created>1564056144146</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564056144146</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12697000" />
+    <option name="totallyTimeSpent" value="13016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="830" y="0" width="1094" height="1047" extended-state="0" />
@@ -193,7 +207,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix bug search \" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug search \" />
+    <MESSAGE value="fix bug, search \ ? *" />
+    <MESSAGE value="fix bug, search \ ? * ." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug, search \ ? * ." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/textInput/input.js" />
@@ -295,8 +311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/todoList/todoList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+        <state relative-caret-position="684">
+          <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
