@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#app2{
+  margin: 100px 0 0 100px;
+  font-size: 30px;
+}
+
+#app2 button{
+  font-size: 15px;
+}
