@@ -15,7 +15,7 @@ export default () => {
     setList(data); //把原始数据保存到state， 或者算出最大最小值再保存到state，都可以。
   }
 
-  // 以下为性能优化方案，减少重复在函数内部重新定义函数的性能损耗
+  // 以下为性能优化方案，减少 在组件内部重新定义函数 的性能损耗
   // const getData = useCallback( async () => {
   //   setList([0]);
   //   console.log('加载数据');
